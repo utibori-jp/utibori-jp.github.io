@@ -103,6 +103,11 @@ body {
   color: var(--muted);
 }
 
+.out.comment {
+  color: #6e7681;
+  font-style: italic;
+}
+
 .projects {
   padding-left: 1.2rem;
   display: flex;
