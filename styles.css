@@ -103,6 +103,41 @@ body {
   color: var(--muted);
 }
 
+.projects {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.proj {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.proj-name {
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+}
+
+.proj:hover .proj-name,
+.proj:focus-visible .proj-name {
+  border-bottom-color: var(--accent);
+}
+
+.proj:focus-visible {
+  outline: none;
+}
+
+.proj-desc {
+  color: var(--muted);
+}
+
+.proj-desc::before {
+  content: "— ";
+}
+
 .links {
   padding-left: 1.2rem;
   display: flex;
