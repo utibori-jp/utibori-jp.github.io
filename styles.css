@@ -114,6 +114,24 @@ body {
   color: var(--muted);
 }
 
+.now {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.now-item {
+  margin: 0;
+  padding-left: 1.1rem;
+  text-indent: -1.1rem;
+}
+
+.now-item::before {
+  content: "> ";
+  color: var(--muted);
+}
+
 .projects {
   padding-left: 1.2rem;
   display: flex;
