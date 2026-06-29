@@ -9,7 +9,9 @@
   <meta property="og:description" content="Cloud Engineer / System Architect — homelab & Kubernetes." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://utibori-jp.github.io/" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>%E2%9D%AF</text></svg>" />
+  <meta property="og:image" content="https://utibori-jp.github.io/assets/icon.png" />
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,15 +27,18 @@
       <p class="line"><span class="prompt">$</span> whoami</p>
       <p class="out">Koki Uchibori</p>
 
+      <p class="line"><span class="prompt">$</span> open ~/avatar.png</p>
+      <div class="avatar-open">
+        <img class="avatar-img" src="assets/icon.png" alt="Koki Uchibori" width="160" height="160" />
+      </div>
+
       <p class="line"><span class="prompt">$</span> cat profile.txt</p>
       <p class="out">Cloud Engineer / System Architect</p>
       <p class="out muted">@ Future Architect Inc.</p>
-      <p class="out comment">// Yak-shaving from bare metal to GitOps,</p>
-      <p class="out comment">// one node at a time.</p>
 
       <p class="line"><span class="prompt">$</span> cat stack.txt</p>
       <div class="stack">
-        <p class="stack-row"><span class="skey">backend</span><span class="sval">Go (net/http) &middot; Java (Spring Boot) &middot; PostgreSQL</span></p>
+        <p class="stack-row"><span class="skey">backend</span><span class="sval">Go &middot; Java &middot; PostgreSQL</span></p>
         <p class="stack-row"><span class="skey">infra</span><span class="sval">Kubernetes &middot; Argo CD &middot; Terraform &middot; Proxmox &middot; Docker &middot; AWS</span></p>
       </div>
 
@@ -43,18 +48,17 @@
 
       <p class="line"><span class="prompt">$</span> cat now.txt</p>
       <div class="now">
-        <p class="now-item">six months into running a 3-node K3s cluster on one MiniPC &mdash; no public ingress, all over Tailscale</p>
-        <p class="now-item">building Atoikura, a household budget app, as its first real workload</p>
+        <p class="now-item">running a 3-node K3s cluster on one MiniPC</p>
+        <p class="now-item">building Atoikura, a household budget app, as its first workload</p>
         <p class="now-item">growing the blog as the cluster grows</p>
-        <p class="now-item">learning English, so one day I can land a joke at the right moment</p>
-        <p class="now-item">spinning up repos ever since I started the homelab &mdash; all unfinished, all fun, and I plan to keep at it, slowly</p>
+        <p class="now-item">learning English, to land a joke at the right moment someday</p>
       </div>
 
       <p class="line"><span class="prompt">$</span> ls projects/</p>
       <div class="projects">
         <a class="proj" href="https://github.com/utibori-jp/atoikura" target="_blank" rel="noopener">
           <span class="proj-name">atoikura&#47;</span>
-          <span class="proj-desc">household budget app answering "how much can I still spend this month?" &middot; Go + K3s over Tailscale</span>
+          <span class="proj-desc">household budget app &middot; Go + React</span>
         </a>
         <a class="proj" href="https://github.com/utibori-jp/homelab-services" target="_blank" rel="noopener">
           <span class="proj-name">homelab-services&#47;</span>
@@ -69,6 +73,9 @@
       <p class="line"><span class="prompt">$</span> cat certs.txt</p>
       <p class="out">AWS DVA / SAA / SCS</p>
       <p class="out">Applied Information Technology Engineer (AP)</p>
+
+      <p class="line"><span class="prompt">$</span> fortune</p>
+      <p class="out comment">Life is just one big yak-shave.</p>
 
       <p class="line"><span class="prompt">$</span> ls links/</p>
       <nav class="links" aria-label="Links">
